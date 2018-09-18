@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>McFadyen Digital - UI test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="container wrapper">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <h1 class="text-center">Search for employees</h1>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputEmploy" placeholder="Example: Mauro, etc...">
+
+                        <div id="tipBox" class="alert-msg alert alert-warning hidden">
+                            <strong>Tip:</strong> Type at least 3 words to start searching.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container wrapper">
+            <div class="row">
+                <h2 class="text-center">Table of results</h1>
+                    <div class="col-xs-12">
+                        <table id="employeesTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Picture</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Active</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Company</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeesTableTbody" class="employeesTbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </section>
+
+        <section class="btn-show-more-container">
+            <button id="buttonShowMore" type="button" class="btn btn-primary center-block">Show More</button>
+        </section>
+    </main>
+
+    <div id="chosen-employee" class="modal-window">
+        <div class="container">
+            <a href="#modal-close" title="Close" class="modal-close">Close</a>
+
+            <h1 id="employeeNameModal" class="text-center">Name</h1>
+
+            <div id="selectedEmployeeImg" class="col-xs-3">
+
+            </div>
+
+            <div id="selectedEmployeeData" class="col-xs-9">
+                <p>Full Name: <span id="name"></span> </p>
+                <p>Gender: <span id="gender"></span> </p>
+                <p>Phone Number: <span id="phone"></span> </p>
+                <p>Company Name: <span id="company"></span> </p>
+                <p>Address: <span id="address"></span> </p>
+            </div>
+
+            <div id="selectedEmployeeAbout" class="col-xs-12">
+                <h3>About Employee:</h3>
+                <p id="about"></p>
+            </div>
+
+            <div class="col-xs-12 registeres-employee">
+                <p>Employee was registered in the system: <span id="registered"></span></p>
+            </div>
+
+            <div class="col-xs-6" id="iframeGMaps">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

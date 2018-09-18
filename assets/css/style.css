@@ -1,0 +1,92 @@
+html,
+body {
+    background-color: #F8F8F8;
+    height: 100%;
+}
+
+.wrapper {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.alert-msg {
+    margin-top: 10px
+}
+
+.btn-show-more-container {
+    margin: 20px 0;
+}
+
+.btn-show-more-container>.btn {
+    min-width: 250px
+}
+
+.table-striped>tbody>tr:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.table-striped>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.767);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.registeres-employee {
+    margin-top: 15px
+}
